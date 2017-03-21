@@ -1,0 +1,129 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnifiedLibraryV1", "UnifiedLibraryV1\UnifiedLibraryV1.csproj", "{4973EE9B-C346-41E4-B898-698CE97E4A9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnifiedLibraryTests", "UnifiedLibraryTests\UnifiedLibraryTests.csproj", "{036C6407-6871-4C3A-8DC6-EBF3CBB5A6E5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4973EE9B-C346-41E4-B898-698CE97E4A9E} = {4973EE9B-C346-41E4-B898-698CE97E4A9E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnifiedLibraryClr", "UnifiedLibraryClr\UnifiedLibraryClr.vcxproj", "{79B1AAF7-1342-4598-BADD-290EFD128233}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnifiedLibraryUITest", "UnifiedLibraryUITest\UnifiedLibraryUITest.csproj", "{14459D18-9A31-4CA2-BA24-7C2CE55DEE03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnifiedLibraryWebTest", "WebApplication1\UnifiedLibraryWebTest.csproj", "{60AD170A-8E6C-4878-9204-B6F6300AB9BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UL_UIP", "UL_UIP\UL_UIP.csproj", "{9C195FA0-B318-4678-B6E0-FEC96CC85F06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4973EE9B-C346-41E4-B898-698CE97E4A9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4973EE9B-C346-41E4-B898-698CE97E4A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4973EE9B-C346-41E4-B898-698CE97E4A9E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4973EE9B-C346-41E4-B898-698CE97E4A9E}.Debug|x64.Build.0 = Debug|Any CPU
+		{4973EE9B-C346-41E4-B898-698CE97E4A9E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4973EE9B-C346-41E4-B898-698CE97E4A9E}.Debug|x86.Build.0 = Debug|Any CPU
+		{4973EE9B-C346-41E4-B898-698CE97E4A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4973EE9B-C346-41E4-B898-698CE97E4A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4973EE9B-C346-41E4-B898-698CE97E4A9E}.Release|x64.ActiveCfg = Release|Any CPU
+		{4973EE9B-C346-41E4-B898-698CE97E4A9E}.Release|x64.Build.0 = Release|Any CPU
+		{4973EE9B-C346-41E4-B898-698CE97E4A9E}.Release|x86.ActiveCfg = Release|Any CPU
+		{4973EE9B-C346-41E4-B898-698CE97E4A9E}.Release|x86.Build.0 = Release|Any CPU
+		{036C6407-6871-4C3A-8DC6-EBF3CBB5A6E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036C6407-6871-4C3A-8DC6-EBF3CBB5A6E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036C6407-6871-4C3A-8DC6-EBF3CBB5A6E5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{036C6407-6871-4C3A-8DC6-EBF3CBB5A6E5}.Debug|x64.Build.0 = Debug|Any CPU
+		{036C6407-6871-4C3A-8DC6-EBF3CBB5A6E5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{036C6407-6871-4C3A-8DC6-EBF3CBB5A6E5}.Debug|x86.Build.0 = Debug|Any CPU
+		{036C6407-6871-4C3A-8DC6-EBF3CBB5A6E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036C6407-6871-4C3A-8DC6-EBF3CBB5A6E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036C6407-6871-4C3A-8DC6-EBF3CBB5A6E5}.Release|x64.ActiveCfg = Release|Any CPU
+		{036C6407-6871-4C3A-8DC6-EBF3CBB5A6E5}.Release|x64.Build.0 = Release|Any CPU
+		{036C6407-6871-4C3A-8DC6-EBF3CBB5A6E5}.Release|x86.ActiveCfg = Release|Any CPU
+		{036C6407-6871-4C3A-8DC6-EBF3CBB5A6E5}.Release|x86.Build.0 = Release|Any CPU
+		{79B1AAF7-1342-4598-BADD-290EFD128233}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{79B1AAF7-1342-4598-BADD-290EFD128233}.Debug|x64.ActiveCfg = Debug|x64
+		{79B1AAF7-1342-4598-BADD-290EFD128233}.Debug|x64.Build.0 = Debug|x64
+		{79B1AAF7-1342-4598-BADD-290EFD128233}.Debug|x86.ActiveCfg = Debug|Win32
+		{79B1AAF7-1342-4598-BADD-290EFD128233}.Debug|x86.Build.0 = Debug|Win32
+		{79B1AAF7-1342-4598-BADD-290EFD128233}.Release|Any CPU.ActiveCfg = Release|Win32
+		{79B1AAF7-1342-4598-BADD-290EFD128233}.Release|x64.ActiveCfg = Release|x64
+		{79B1AAF7-1342-4598-BADD-290EFD128233}.Release|x64.Build.0 = Release|x64
+		{79B1AAF7-1342-4598-BADD-290EFD128233}.Release|x86.ActiveCfg = Release|Win32
+		{79B1AAF7-1342-4598-BADD-290EFD128233}.Release|x86.Build.0 = Release|Win32
+		{14459D18-9A31-4CA2-BA24-7C2CE55DEE03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14459D18-9A31-4CA2-BA24-7C2CE55DEE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14459D18-9A31-4CA2-BA24-7C2CE55DEE03}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{14459D18-9A31-4CA2-BA24-7C2CE55DEE03}.Debug|x64.Build.0 = Debug|Any CPU
+		{14459D18-9A31-4CA2-BA24-7C2CE55DEE03}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{14459D18-9A31-4CA2-BA24-7C2CE55DEE03}.Debug|x86.Build.0 = Debug|Any CPU
+		{14459D18-9A31-4CA2-BA24-7C2CE55DEE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14459D18-9A31-4CA2-BA24-7C2CE55DEE03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14459D18-9A31-4CA2-BA24-7C2CE55DEE03}.Release|x64.ActiveCfg = Release|Any CPU
+		{14459D18-9A31-4CA2-BA24-7C2CE55DEE03}.Release|x64.Build.0 = Release|Any CPU
+		{14459D18-9A31-4CA2-BA24-7C2CE55DEE03}.Release|x86.ActiveCfg = Release|Any CPU
+		{14459D18-9A31-4CA2-BA24-7C2CE55DEE03}.Release|x86.Build.0 = Release|Any CPU
+		{60AD170A-8E6C-4878-9204-B6F6300AB9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60AD170A-8E6C-4878-9204-B6F6300AB9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60AD170A-8E6C-4878-9204-B6F6300AB9BD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{60AD170A-8E6C-4878-9204-B6F6300AB9BD}.Debug|x64.Build.0 = Debug|Any CPU
+		{60AD170A-8E6C-4878-9204-B6F6300AB9BD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{60AD170A-8E6C-4878-9204-B6F6300AB9BD}.Debug|x86.Build.0 = Debug|Any CPU
+		{60AD170A-8E6C-4878-9204-B6F6300AB9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60AD170A-8E6C-4878-9204-B6F6300AB9BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60AD170A-8E6C-4878-9204-B6F6300AB9BD}.Release|x64.ActiveCfg = Release|Any CPU
+		{60AD170A-8E6C-4878-9204-B6F6300AB9BD}.Release|x64.Build.0 = Release|Any CPU
+		{60AD170A-8E6C-4878-9204-B6F6300AB9BD}.Release|x86.ActiveCfg = Release|Any CPU
+		{60AD170A-8E6C-4878-9204-B6F6300AB9BD}.Release|x86.Build.0 = Release|Any CPU
+		{9C195FA0-B318-4678-B6E0-FEC96CC85F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C195FA0-B318-4678-B6E0-FEC96CC85F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C195FA0-B318-4678-B6E0-FEC96CC85F06}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9C195FA0-B318-4678-B6E0-FEC96CC85F06}.Debug|x64.Build.0 = Debug|Any CPU
+		{9C195FA0-B318-4678-B6E0-FEC96CC85F06}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9C195FA0-B318-4678-B6E0-FEC96CC85F06}.Debug|x86.Build.0 = Debug|Any CPU
+		{9C195FA0-B318-4678-B6E0-FEC96CC85F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C195FA0-B318-4678-B6E0-FEC96CC85F06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C195FA0-B318-4678-B6E0-FEC96CC85F06}.Release|x64.ActiveCfg = Release|Any CPU
+		{9C195FA0-B318-4678-B6E0-FEC96CC85F06}.Release|x64.Build.0 = Release|Any CPU
+		{9C195FA0-B318-4678-B6E0-FEC96CC85F06}.Release|x86.ActiveCfg = Release|Any CPU
+		{9C195FA0-B318-4678-B6E0-FEC96CC85F06}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://daemontoolz.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = UnifiedLibraryClr\\UnifiedLibraryClr.vcxproj
+		SccProjectName0 = UnifiedLibraryClr
+		SccLocalPath0 = UnifiedLibraryClr
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = UL_UIP\\UL_UIP.csproj
+		SccProjectName2 = UL_UIP
+		SccLocalPath2 = UL_UIP
+		SccProjectUniqueName3 = UnifiedLibraryTests\\UnifiedLibraryTests.csproj
+		SccProjectName3 = UnifiedLibraryTests
+		SccLocalPath3 = UnifiedLibraryTests
+		SccProjectUniqueName4 = UnifiedLibraryUITest\\UnifiedLibraryUITest.csproj
+		SccProjectName4 = UnifiedLibraryUITest
+		SccLocalPath4 = UnifiedLibraryUITest
+		SccProjectUniqueName5 = UnifiedLibraryV1\\UnifiedLibraryV1.csproj
+		SccProjectName5 = UnifiedLibraryV1
+		SccLocalPath5 = UnifiedLibraryV1
+		SccProjectUniqueName6 = WebApplication1\\UnifiedLibraryWebTest.csproj
+		SccProjectName6 = WebApplication1
+		SccLocalPath6 = WebApplication1
+	EndGlobalSection
+EndGlobal

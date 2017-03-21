@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4973EE9B-C346-41E4-B898-698CE97E4A9E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnifiedLibraryV1</RootNamespace>
+    <AssemblyName>UnifiedLibraryV1</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="AWSSDK, Version=2.3.55.2, Culture=neutral, PublicKeyToken=9f476d3089b52be3, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.2.3.55.2\lib\net45\AWSSDK.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.Core.3.3.2\lib\net45\AWSSDK.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AWSSDK.S3, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.S3.3.3.0.4\lib\net45\AWSSDK.S3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.7.4137.9688, Culture=neutral, PublicKeyToken=a4292a325f69b123, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.1.7.0\lib\Net40-Client\BouncyCastle.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.16.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.16.0\lib\net45\Google.Apis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Analytics.v3, Version=1.16.0.582, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Analytics.v3.1.16.0.582\lib\netstandard1.3\Google.Apis.Analytics.v3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.16.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.16.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.Mvc4, Version=1.16.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.Mvc.1.16.0\lib\net45\Google.Apis.Auth.Mvc4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.16.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.16.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Calendar.v3, Version=1.16.0.626, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Calendar.v3.1.16.0.626\lib\netstandard1.3\Google.Apis.Calendar.v3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.16.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.16.0\lib\net45\Google.Apis.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v3, Version=1.16.0.624, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Drive.v3.1.16.0.624\lib\netstandard1.3\Google.Apis.Drive.v3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Oauth2.v2, Version=1.16.0.623, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Oauth2.v2.1.16.0.623\lib\netstandard1.3\Google.Apis.Oauth2.v2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.16.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.16.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Sheets.v4, Version=1.16.0.631, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Sheets.v4.1.16.0.631\lib\netstandard1.3\Google.Apis.Sheets.v4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.YouTube.v3, Version=1.16.0.582, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.YouTube.v3.1.16.0.582\lib\netstandard1.3\Google.Apis.YouTube.v3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PacketDotNet, Version=0.13.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PacketDotNet.0.13.0\lib\net\PacketDotNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.0.0\lib\net40\Renci.SshNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpPcap, Version=4.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpPcap.4.2.0\lib\net\SharpPcap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zlib.Portable, Version=1.11.0.0, Culture=neutral, PublicKeyToken=431cba815f6a8b5b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zlib.Portable.Signed.1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cloud\Amazon\API\ApiGatewayConnect.cs" />
+    <Compile Include="Cloud\Amazon\Common.cs" />
+    <Compile Include="Cloud\Amazon\ICommon.cs" />
+    <Compile Include="Database\Factories\DbTypes.cs" />
+    <Compile Include="Database\Factories\GenericSqlFactory.cs" />
+    <Compile Include="Database\Layer\SqlExceptionSafeConnector.cs" />
+    <Compile Include="Database\NoSQL\MongoDbRawConnector.cs" />
+    <Compile Include="Database\NoSQL\RedisRawConnector.cs" />
+    <Compile Include="Database\SQL\IConnect.cs" />
+    <Compile Include="Database\SQL\MySqlRawConnector.cs" />
+    <Compile Include="Database\SQL\OracleSqlRawConnector.cs" />
+    <Compile Include="Database\SQL\RawConnector.cs" />
+    <Compile Include="Database\SQL\TSqlRawConnector.cs" />
+    <Compile Include="Exceptions\Security\InputRequiredException.cs" />
+    <Compile Include="Exceptions\Security\NotEnoughPrivilegeException.cs" />
+    <Compile Include="Exceptions\Web\HtmlEmptyContent.cs" />
+    <Compile Include="Exceptions\Web\HtmlInvalidLinkException.cs" />
+    <Compile Include="Google\Agenda\AgendaClient.cs" />
+    <Compile Include="Google\Docs\DriveClient.cs" />
+    <Compile Include="Google\Sheet\SheetClient.cs" />
+    <Compile Include="Google\Youtube\YoutubeClient.cs" />
+    <Compile Include="IO\Json\JsonParser.cs" />
+    <Compile Include="IO\Log\Exceptions\LoggerException.cs" />
+    <Compile Include="IO\Log\Exceptions\MonitorIOException.cs" />
+    <Compile Include="IO\Log\Log.cs" />
+    <Compile Include="IO\Log\LogContent.cs" />
+    <Compile Include="IO\Log\LogMonitor.cs" />
+    <Compile Include="IO\Log\LogMonitorFactory.cs" />
+    <Compile Include="IO\Stream\DataReader.cs" />
+    <Compile Include="IO\Stream\DataWriter.cs" />
+    <Compile Include="IO\Stream\IDataReader.cs" />
+    <Compile Include="IO\Stream\IDataWriter.cs" />
+    <Compile Include="IO\Xml\XmlParser.cs" />
+    <Compile Include="Network\FTP\Exceptions\FtpConnectionException.cs" />
+    <Compile Include="Network\FTP\Exceptions\FtpTransfertException.cs" />
+    <Compile Include="Network\FTP\FTPClient.cs" />
+    <Compile Include="Network\FTP\FTP.cs" />
+    <Compile Include="Network\FTP\IFtp.cs" />
+    <Compile Include="Network\FTP\SFTPClient.cs" />
+    <Compile Include="Network\Monitor\NetworkFilters.cs" />
+    <Compile Include="Network\Monitor\NetworkSurveillance.cs" />
+    <Compile Include="Network\Monitor\PortOverriding.cs" />
+    <Compile Include="Network\Security\PortMonitor.cs" />
+    <Compile Include="Network\Web\SimpleDownloader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\AsymetricalCrypt\AsymetricalCrypt.cs" />
+    <Compile Include="Security\AsymetricalCrypt\IAsymetricalCrypt.cs" />
+    <Compile Include="Security\AsymetricalCrypt\RSA.cs" />
+    <Compile Include="Security\Hash\GenericalHash.cs" />
+    <Compile Include="Security\Hash\Hash.cs" />
+    <Compile Include="Security\Hash\IHash.cs" />
+    <Compile Include="Security\Hash\MD5.cs" />
+    <Compile Include="Security\Hash\SHA512.cs" />
+    <Compile Include="Security\SymetricalCrypt\AES.cs" />
+    <Compile Include="Security\SymetricalCrypt\Exception\WrongSizeKeyException.cs" />
+    <Compile Include="Security\SymetricalCrypt\ISymetricalCrypt.cs" />
+    <Compile Include="Security\SymetricalCrypt\SymetricalCrypt.cs" />
+    <Compile Include="SystemManagement\Compression\Monitor.cs" />
+    <Compile Include="SystemManagement\Compression\MessageLevel.cs" />
+    <Compile Include="SystemManagement\Compression\DataCompressor.cs" />
+    <Compile Include="SystemManagement\Compression\FileCompressor.cs" />
+    <Compile Include="SystemManagement\Compression\ArchiveExtensions.cs" />
+    <Compile Include="SystemManagement\Defrag\Defragger.cs" />
+    <Compile Include="SystemManagement\Infos\DeviceConstants.cs" />
+    <Compile Include="SystemManagement\Infos\SystemFolder.cs" />
+    <Compile Include="SystemManagement\Infos\SystemInfos.cs" />
+    <Compile Include="SystemManagement\Reflection\DynamicConstructor.cs" />
+    <Compile Include="SystemManagement\RegistryManager\BasicSecurity.cs" />
+    <Compile Include="SystemManagement\RegistryManager\RegistryFullAccess.cs" />
+    <Compile Include="SystemManagement\RegistryManager\RegistryLimitedAccess.cs" />
+    <Compile Include="SystemManagement\Security\Administrator.cs" />
+    <Compile Include="Threading\InterProcessCommunication.cs" />
+    <Compile Include="Threading\InterThreadCommunication.cs" />
+    <Compile Include="Threading\SafeThread.cs" />
+    <Compile Include="Threading\ThreadFactory.cs" />
+    <Compile Include="Web\PageReader\HtmlReader.cs" />
+    <Compile Include="Web\PageReader\HtmlTags.cs" />
+    <Compile Include="Web\Tokens\JsonWebToken.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cloud\Amazon\ElastiCache\" />
+    <Folder Include="Cloud\Amazon\Lambda\" />
+    <Folder Include="Cloud\Amazon\RDS\" />
+    <Folder Include="Cloud\Azure\" />
+    <Folder Include="Extension\" />
+    <Folder Include="System\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Exceptions\Database\_Void.txt" />
+    <Content Include="Exceptions\Graphics\_Void.txt" />
+    <Content Include="Exceptions\IO\_Void.txt" />
+    <Content Include="Exceptions\Network\_Void.txt" />
+    <Content Include="Exceptions\System\_Void.txt" />
+    <Content Include="Exceptions\Threading\_Void.txt" />
+    <Content Include="Exceptions\Web\_Void.txt" />
+    <Content Include="Graphics\Canvas\_Void.txt" />
+    <Content Include="Miscellaneous\_Void.txt" />
+    <Content Include="Network\SSL\TextFile1.txt" />
+    <Content Include="Network\TCP\TextFile1.txt" />
+    <Content Include="Network\TLS\TextFile1.txt" />
+    <Content Include="Network\UDP\TextFile1.txt" />
+    <Content Include="Security\_Void.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\AWSSDK.S3.3.3.0.4\analyzers\dotnet\cs\AWSSDK.S3.CodeAnalysis.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

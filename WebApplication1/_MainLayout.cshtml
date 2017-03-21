@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@Page.Title - Portfolio</title>
+
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/jquery-ui-1.10.3.js"></script>
+        <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+        <script src="~/Scripts/bootstrap.js"></script>
+        <link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+        <meta name="viewport" content="width=device-width" />
+        <meta name="description" content="The description of my page" />
+    </head>
+    
+<body>
+    <div class="navigation">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" id="menu" href="~/">
+                        <span class="glyphicon glyphicon-home"></span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" style="height: 1px;" aria-expanded="false" id="navbar">
+                    <ul id="menu" class="nav navbar-nav">
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="container">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-md-12">
+                        @RenderBody()
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <footer>
+            <div class="modal-footer">
+                <p>&copy; @DateTime.Now.Year - Portfolio - Axel MACIEJEWSKI</p>
+            </div>
+        </footer>
+        @RenderSection("Scripts", required: false)
+    </div>
+</body>
+</html>

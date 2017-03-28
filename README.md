@@ -18,5 +18,5 @@ Here is the composition of the actual snapshot:
 
 
 ### Contributors
-  - Barelle Alexandre
+  - @ShiiniiDev
 
